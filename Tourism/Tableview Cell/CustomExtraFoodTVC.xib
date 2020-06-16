@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Bold.ttf">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomExtraFoodTVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuna" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-64-mct" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="20" y="17" width="33" height="16"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 35.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8NO-Az-pGD" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="63" y="17" width="49.5" height="16"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-EX-Kgz">
+                        <rect key="frame" x="245" y="0.0" width="25" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="F2u-Ko-01E"/>
+                        </constraints>
+                        <state key="normal" image="ic_close"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGe-Ry-kB8">
+                        <rect key="frame" x="275" y="0.0" width="25" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="ZRw-LA-NtI"/>
+                        </constraints>
+                        <state key="normal" image="checkbox_on"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goj-jg-bbS" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="270" y="0.0" width="30" height="50"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                        <state key="normal" title="add">
+                            <color key="titleColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ab"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="hJZ-EX-Kgz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8NO-Az-pGD" secondAttribute="trailing" constant="5" id="A53-aZ-yow"/>
+                    <constraint firstAttribute="trailing" secondItem="TGe-Ry-kB8" secondAttribute="trailing" constant="20" id="EOo-Ml-N2b"/>
+                    <constraint firstItem="8NO-Az-pGD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KIE-WY-ZfN"/>
+                    <constraint firstAttribute="trailing" secondItem="goj-jg-bbS" secondAttribute="trailing" constant="20" id="N78-DS-82a"/>
+                    <constraint firstItem="BgF-64-mct" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Nwb-de-KUX"/>
+                    <constraint firstAttribute="bottom" secondItem="TGe-Ry-kB8" secondAttribute="bottom" id="PWS-OC-1nr"/>
+                    <constraint firstItem="TGe-Ry-kB8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QOK-xH-F4J"/>
+                    <constraint firstItem="hJZ-EX-Kgz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QmE-o2-pCJ"/>
+                    <constraint firstItem="goj-jg-bbS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Sqx-hC-Ldi"/>
+                    <constraint firstItem="8NO-Az-pGD" firstAttribute="leading" secondItem="BgF-64-mct" secondAttribute="trailing" constant="10" id="Uhn-rs-lbL"/>
+                    <constraint firstAttribute="bottom" secondItem="goj-jg-bbS" secondAttribute="bottom" id="X5d-sY-gjj"/>
+                    <constraint firstItem="TGe-Ry-kB8" firstAttribute="leading" secondItem="hJZ-EX-Kgz" secondAttribute="trailing" constant="5" id="ak4-VL-SWQ"/>
+                    <constraint firstAttribute="bottom" secondItem="hJZ-EX-Kgz" secondAttribute="bottom" id="foC-ai-f1e"/>
+                    <constraint firstItem="BgF-64-mct" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zqJ-54-FNj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addBtn" destination="goj-jg-bbS" id="quo-Pi-V9j"/>
+                <outlet property="cancelBtn" destination="hJZ-EX-Kgz" id="PIW-Wo-Psr"/>
+                <outlet property="priceLbl" destination="8NO-Az-pGD" id="nJO-OB-2E5"/>
+                <outlet property="successBtn" destination="TGe-Ry-kB8" id="vJ6-gR-MPH"/>
+                <outlet property="titleLbl" destination="BgF-64-mct" id="s7y-MU-sqC"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_on" width="21" height="21"/>
+        <image name="ic_close" width="7" height="7"/>
+    </resources>
+</document>

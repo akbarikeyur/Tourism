@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Bold.ttf">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CustomWelcomeCVC" id="gTV-IL-0wX" customClass="CustomWelcomeCVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen1" translatesAutoresizingMaskIntoConstraints="NO" id="7gp-gW-mLh">
+                        <rect key="frame" x="-2" y="-2" width="324" height="572"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="9yd-mK-zWw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Place" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ0-QO-CnY" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="20" y="410.5" width="280" height="35"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ab"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is mary your tour guide in dubai, Let's tour together" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfO-Xo-Syr" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="20" y="450.5" width="280" height="37.5"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7gp-gW-mLh" secondAttribute="trailing" constant="-2" id="1Pz-m2-XCH"/>
+                <constraint firstItem="9yd-mK-zWw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6IW-PH-S1X"/>
+                <constraint firstAttribute="bottom" secondItem="xfO-Xo-Syr" secondAttribute="bottom" constant="80" id="IsB-oE-Du0"/>
+                <constraint firstItem="7gp-gW-mLh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-2" id="PdE-8c-5eK"/>
+                <constraint firstItem="fJ0-QO-CnY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="TYp-9E-4FK"/>
+                <constraint firstItem="9yd-mK-zWw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VOu-uj-Fav"/>
+                <constraint firstItem="xfO-Xo-Syr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="XE2-Kz-gZ7"/>
+                <constraint firstAttribute="trailing" secondItem="9yd-mK-zWw" secondAttribute="trailing" id="bQc-pg-CTo"/>
+                <constraint firstAttribute="trailing" secondItem="fJ0-QO-CnY" secondAttribute="trailing" constant="20" id="f2v-aR-7Vh"/>
+                <constraint firstItem="xfO-Xo-Syr" firstAttribute="top" secondItem="fJ0-QO-CnY" secondAttribute="bottom" constant="5" id="fdx-bP-3lJ"/>
+                <constraint firstAttribute="bottom" secondItem="9yd-mK-zWw" secondAttribute="bottom" id="jhI-iR-lNl"/>
+                <constraint firstAttribute="trailing" secondItem="xfO-Xo-Syr" secondAttribute="trailing" constant="20" id="qcG-8M-WZQ"/>
+                <constraint firstItem="7gp-gW-mLh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-2" id="uXr-5G-LRN"/>
+                <constraint firstAttribute="bottom" secondItem="7gp-gW-mLh" secondAttribute="bottom" constant="-2" id="zME-Ny-ImB"/>
+            </constraints>
+            <connections>
+                <outlet property="descLbl" destination="xfO-Xo-Syr" id="dED-C1-EQy"/>
+                <outlet property="imgView" destination="7gp-gW-mLh" id="8K8-Cq-Ouj"/>
+                <outlet property="titleLbl" destination="fJ0-QO-CnY" id="5gJ-nh-J9M"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="black_shadow" width="390" height="814"/>
+        <image name="screen1" width="1733" height="865"/>
+    </resources>
+</document>

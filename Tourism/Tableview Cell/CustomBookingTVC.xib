@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomBookingTVC" id="KGk-i7-Jjw" customClass="CustomBookingTVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CzN-th-uIq" customClass="View" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="20" y="5" width="280" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_bruj" translatesAutoresizingMaskIntoConstraints="NO" id="bMd-3l-erU" customClass="ImageView" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="gVV-rE-cnK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquaventure waterpark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gR2-qB-4nJ" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="90" y="15" width="180" height="16"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flat discount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vfS-mY-Q3s" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="90" y="36" width="180" height="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBo-dc-rF9" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="90" y="55" width="45" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.2470588235" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="g9y-XS-6Xi"/>
+                                    <constraint firstAttribute="height" constant="20" id="tjZ-xD-l1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="2" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="4.2" image="star_small_on">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5n-NC-G0s" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="140" y="55" width="80" height="20"/>
+                                <color key="backgroundColor" red="0.50588235294117645" green="0.31372549019607843" blue="0.85882352941176465" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="n32-uq-Rpn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Mon 12:00 PM">
+                                    <color key="titleColor" red="0.50588235294117645" green="0.31372549019607843" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwB-Ip-PSR">
+                                <rect key="frame" x="222" y="52.5" width="24" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="NeV-6Z-9mm"/>
+                                    <constraint firstAttribute="width" constant="24" id="zyU-gF-pUh"/>
+                                </constraints>
+                                <state key="normal" image="edit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r08-MJ-zuH">
+                                <rect key="frame" x="251" y="52.5" width="24" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="dWT-3Q-fRS"/>
+                                    <constraint firstAttribute="width" constant="24" id="ujS-0L-zvj"/>
+                                </constraints>
+                                <state key="normal" image="eye"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vfS-mY-Q3s" firstAttribute="top" secondItem="gR2-qB-4nJ" secondAttribute="bottom" constant="5" id="4wD-fH-ofo"/>
+                            <constraint firstItem="bMd-3l-erU" firstAttribute="top" secondItem="CzN-th-uIq" secondAttribute="top" constant="10" id="8hj-Nj-9wj"/>
+                            <constraint firstItem="gBo-dc-rF9" firstAttribute="leading" secondItem="bMd-3l-erU" secondAttribute="trailing" constant="10" id="H3N-OJ-Xz1"/>
+                            <constraint firstItem="gR2-qB-4nJ" firstAttribute="top" secondItem="CzN-th-uIq" secondAttribute="top" constant="15" id="JPH-MP-VAP"/>
+                            <constraint firstItem="vfS-mY-Q3s" firstAttribute="leading" secondItem="bMd-3l-erU" secondAttribute="trailing" constant="10" id="K85-c8-yPs"/>
+                            <constraint firstItem="bMd-3l-erU" firstAttribute="leading" secondItem="CzN-th-uIq" secondAttribute="leading" constant="10" id="VwY-2y-Cye"/>
+                            <constraint firstAttribute="bottom" secondItem="bMd-3l-erU" secondAttribute="bottom" constant="10" id="dSh-cZ-VCj"/>
+                            <constraint firstItem="gR2-qB-4nJ" firstAttribute="leading" secondItem="bMd-3l-erU" secondAttribute="trailing" constant="10" id="dbH-Sc-J0R"/>
+                            <constraint firstItem="JwB-Ip-PSR" firstAttribute="leading" secondItem="o5n-NC-G0s" secondAttribute="trailing" constant="2" id="h4B-gI-J42"/>
+                            <constraint firstItem="o5n-NC-G0s" firstAttribute="leading" secondItem="gBo-dc-rF9" secondAttribute="trailing" constant="5" id="hkK-zi-vUz"/>
+                            <constraint firstItem="JwB-Ip-PSR" firstAttribute="centerY" secondItem="gBo-dc-rF9" secondAttribute="centerY" id="lFO-2r-ZOS"/>
+                            <constraint firstAttribute="trailing" secondItem="gR2-qB-4nJ" secondAttribute="trailing" constant="10" id="lXf-AC-cYn"/>
+                            <constraint firstAttribute="trailing" secondItem="r08-MJ-zuH" secondAttribute="trailing" constant="5" id="rJw-MG-PJ3"/>
+                            <constraint firstItem="gBo-dc-rF9" firstAttribute="top" secondItem="vfS-mY-Q3s" secondAttribute="bottom" constant="5" id="tFY-Rh-LRx"/>
+                            <constraint firstItem="r08-MJ-zuH" firstAttribute="leading" secondItem="JwB-Ip-PSR" secondAttribute="trailing" constant="5" id="tuB-hr-DYv"/>
+                            <constraint firstItem="o5n-NC-G0s" firstAttribute="centerY" secondItem="gBo-dc-rF9" secondAttribute="centerY" id="whw-TV-TuO"/>
+                            <constraint firstAttribute="trailing" secondItem="vfS-mY-Q3s" secondAttribute="trailing" constant="10" id="yNB-mh-vv1"/>
+                            <constraint firstItem="r08-MJ-zuH" firstAttribute="centerY" secondItem="gBo-dc-rF9" secondAttribute="centerY" id="ycD-9j-PXT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CzN-th-uIq" secondAttribute="trailing" constant="20" id="841-h3-Dpb"/>
+                    <constraint firstItem="CzN-th-uIq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Pbc-bF-HXw"/>
+                    <constraint firstItem="CzN-th-uIq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Thq-zC-5GV"/>
+                    <constraint firstAttribute="bottom" secondItem="CzN-th-uIq" secondAttribute="bottom" constant="5" id="Ww7-vx-lKv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateBtn" destination="o5n-NC-G0s" id="X3v-6c-f47"/>
+                <outlet property="editBtn" destination="JwB-Ip-PSR" id="HpR-PX-Bo8"/>
+                <outlet property="eyeBtn" destination="r08-MJ-zuH" id="pXi-bS-VAf"/>
+                <outlet property="imgView" destination="bMd-3l-erU" id="fIN-Uk-l6o"/>
+                <outlet property="starBtn" destination="gBo-dc-rF9" id="e6u-zj-rqF"/>
+                <outlet property="subTitleLbl" destination="vfS-mY-Q3s" id="QWb-mD-5L2"/>
+                <outlet property="titleLbl" destination="gR2-qB-4nJ" id="bj4-9I-0IL"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="16" height="16"/>
+        <image name="eye" width="23.5" height="14"/>
+        <image name="star_small_on" width="11" height="10"/>
+        <image name="temp_bruj" width="703" height="483"/>
+    </resources>
+</document>

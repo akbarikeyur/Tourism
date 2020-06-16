@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CustomFoodCVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="162"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="162"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="rdp-g4-WAr" customClass="ImageView" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="130" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="103" id="7Pc-Pa-YtV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheesy Beef Burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="frI-5g-SMl" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="5" y="113" width="130" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="bLs-kl-Zjb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 20.76" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yem-H9-sT5" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="5" y="129" width="130" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="x1c-y6-ien"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                        <color key="textColor" red="0.99607843137254903" green="0.45882352941176469" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheesy Beef Burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-gQ-Ax4" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="5" y="145" width="130" height="14"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Nc2-gQ-Ax4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="51i-QT-ErS"/>
+                <constraint firstItem="Nc2-gQ-Ax4" firstAttribute="top" secondItem="Yem-H9-sT5" secondAttribute="bottom" constant="2" id="5lS-9N-8sa"/>
+                <constraint firstAttribute="trailing" secondItem="rdp-g4-WAr" secondAttribute="trailing" constant="5" id="F65-IE-lUq"/>
+                <constraint firstAttribute="bottom" secondItem="Nc2-gQ-Ax4" secondAttribute="bottom" constant="3" id="Khq-MT-6SM"/>
+                <constraint firstItem="Yem-H9-sT5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="RBU-Eh-efU"/>
+                <constraint firstItem="Yem-H9-sT5" firstAttribute="top" secondItem="frI-5g-SMl" secondAttribute="bottom" constant="2" id="Xgn-zI-J9x"/>
+                <constraint firstAttribute="trailing" secondItem="Nc2-gQ-Ax4" secondAttribute="trailing" constant="5" id="cRr-U6-JGp"/>
+                <constraint firstAttribute="trailing" secondItem="Yem-H9-sT5" secondAttribute="trailing" constant="5" id="dEA-RU-L9W"/>
+                <constraint firstAttribute="trailing" secondItem="frI-5g-SMl" secondAttribute="trailing" constant="5" id="gFy-aY-66d"/>
+                <constraint firstItem="rdp-g4-WAr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="jMt-Sc-Yo6"/>
+                <constraint firstItem="frI-5g-SMl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="q34-HG-egB"/>
+                <constraint firstItem="frI-5g-SMl" firstAttribute="top" secondItem="rdp-g4-WAr" secondAttribute="bottom" constant="5" id="tEH-Yq-iSA"/>
+                <constraint firstItem="rdp-g4-WAr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="tfJ-Bq-L40"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgView" destination="rdp-g4-WAr" id="DXh-ov-hjT"/>
+                <outlet property="priceLbl" destination="Yem-H9-sT5" id="DfK-bL-Lff"/>
+                <outlet property="subTitleLbl" destination="Nc2-gQ-Ax4" id="CEm-6N-lS7"/>
+                <outlet property="titleLbl" destination="frI-5g-SMl" id="WB0-PL-nXW"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food" width="375" height="409"/>
+    </resources>
+</document>

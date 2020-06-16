@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTopicTVC" id="KGk-i7-Jjw" customClass="CustomTopicTVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpF-iI-zA9" customClass="View" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="280" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_bruj" translatesAutoresizingMaskIntoConstraints="NO" id="Z7H-A4-nPE" customClass="ImageView" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="P4h-lf-0F8"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZIh-Tp-j4C"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austine Gonzel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7J-og-5Iu" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="70" y="18" width="101" height="16"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.19215686274509802" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about 55 min ago May 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrz-6V-7BH" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="70" y="39" width="139.5" height="12"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyL-Bm-RrO">
+                                <rect key="frame" x="248" y="0.0" width="22" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="4qm-Pw-0xm"/>
+                                    <constraint firstAttribute="height" constant="32" id="Z9L-8Q-zrM"/>
+                                </constraints>
+                                <state key="normal" image="bookmark_off"/>
+                                <state key="selected" image="bookmark_on"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7a-76-P7h">
+                                <rect key="frame" x="0.0" y="70" width="280" height="12"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outlet villege has much better options and brand." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNN-qC-ulp" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="260" height="12"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pNN-qC-ulp" firstAttribute="top" secondItem="O7a-76-P7h" secondAttribute="top" id="4zS-D9-4dR"/>
+                                    <constraint firstAttribute="trailing" secondItem="pNN-qC-ulp" secondAttribute="trailing" constant="10" id="Gk5-Pd-kjG"/>
+                                    <constraint firstItem="pNN-qC-ulp" firstAttribute="leading" secondItem="O7a-76-P7h" secondAttribute="leading" constant="10" id="Sf9-bx-rjm"/>
+                                    <constraint firstAttribute="bottom" secondItem="pNN-qC-ulp" secondAttribute="bottom" id="dm2-2w-Z8W"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UtW-Ix-ga6">
+                                <rect key="frame" x="0.0" y="82" width="280" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFu-oX-gEu">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-SJ-4BF" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="5" width="39" height="40"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPw-K9-vjG" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                                <rect key="frame" x="54" y="5" width="39.5" height="40"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-BX-46j" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                                <rect key="frame" x="98.5" y="5" width="39" height="40"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoN-lX-hrB" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                                <rect key="frame" x="142.5" y="5" width="39" height="40"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2up-b4-xiA" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                                <rect key="frame" x="186.5" y="5" width="39.5" height="40"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaV-ZA-JFV" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                                <rect key="frame" x="231" y="5" width="39" height="40"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="V7w-BX-46j" firstAttribute="width" secondItem="Gsv-SJ-4BF" secondAttribute="width" id="37K-f4-uLH"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gsv-SJ-4BF" secondAttribute="bottom" constant="5" id="4b8-Ot-SmR"/>
+                                            <constraint firstItem="PoN-lX-hrB" firstAttribute="top" secondItem="WFu-oX-gEu" secondAttribute="top" constant="5" id="4dd-bi-O13"/>
+                                            <constraint firstAttribute="height" constant="50" id="4fP-bq-Qpm"/>
+                                            <constraint firstAttribute="bottom" secondItem="2up-b4-xiA" secondAttribute="bottom" constant="5" id="6A0-1v-iBd"/>
+                                            <constraint firstItem="jPw-K9-vjG" firstAttribute="leading" secondItem="Gsv-SJ-4BF" secondAttribute="trailing" constant="5" id="BZb-8i-RlF"/>
+                                            <constraint firstAttribute="bottom" secondItem="jPw-K9-vjG" secondAttribute="bottom" constant="5" id="Bf1-Ds-3Nk"/>
+                                            <constraint firstItem="jaV-ZA-JFV" firstAttribute="leading" secondItem="2up-b4-xiA" secondAttribute="trailing" constant="5" id="Fof-KS-86K"/>
+                                            <constraint firstAttribute="bottom" secondItem="V7w-BX-46j" secondAttribute="bottom" constant="5" id="HHQ-7f-bDb"/>
+                                            <constraint firstItem="PoN-lX-hrB" firstAttribute="width" secondItem="Gsv-SJ-4BF" secondAttribute="width" id="HP4-o7-1Vj"/>
+                                            <constraint firstAttribute="bottom" secondItem="PoN-lX-hrB" secondAttribute="bottom" constant="5" id="JDq-aJ-NgE"/>
+                                            <constraint firstItem="Gsv-SJ-4BF" firstAttribute="leading" secondItem="WFu-oX-gEu" secondAttribute="leading" constant="10" id="MzL-Gi-BBZ"/>
+                                            <constraint firstItem="2up-b4-xiA" firstAttribute="width" secondItem="Gsv-SJ-4BF" secondAttribute="width" id="Qlx-7E-ND5"/>
+                                            <constraint firstItem="V7w-BX-46j" firstAttribute="top" secondItem="WFu-oX-gEu" secondAttribute="top" constant="5" id="SQ8-dC-Sg9"/>
+                                            <constraint firstItem="jaV-ZA-JFV" firstAttribute="top" secondItem="WFu-oX-gEu" secondAttribute="top" constant="5" id="ZqR-KN-Wb1"/>
+                                            <constraint firstItem="jaV-ZA-JFV" firstAttribute="width" secondItem="Gsv-SJ-4BF" secondAttribute="width" id="aMk-ng-q5X"/>
+                                            <constraint firstItem="Gsv-SJ-4BF" firstAttribute="top" secondItem="WFu-oX-gEu" secondAttribute="top" constant="5" id="ePa-hi-Jui"/>
+                                            <constraint firstItem="2up-b4-xiA" firstAttribute="top" secondItem="WFu-oX-gEu" secondAttribute="top" constant="5" id="i1f-gv-MwM"/>
+                                            <constraint firstItem="2up-b4-xiA" firstAttribute="leading" secondItem="PoN-lX-hrB" secondAttribute="trailing" constant="5" id="ipI-mN-raL"/>
+                                            <constraint firstItem="jPw-K9-vjG" firstAttribute="top" secondItem="WFu-oX-gEu" secondAttribute="top" constant="5" id="mRQ-Hi-7rF"/>
+                                            <constraint firstAttribute="trailing" secondItem="jaV-ZA-JFV" secondAttribute="trailing" constant="10" id="rvu-uk-rUN"/>
+                                            <constraint firstItem="V7w-BX-46j" firstAttribute="leading" secondItem="jPw-K9-vjG" secondAttribute="trailing" constant="5" id="s0L-4v-b0l"/>
+                                            <constraint firstAttribute="bottom" secondItem="jaV-ZA-JFV" secondAttribute="bottom" constant="5" id="w78-UD-U1P"/>
+                                            <constraint firstItem="jPw-K9-vjG" firstAttribute="width" secondItem="Gsv-SJ-4BF" secondAttribute="width" id="wRD-Bt-wNL"/>
+                                            <constraint firstItem="PoN-lX-hrB" firstAttribute="leading" secondItem="V7w-BX-46j" secondAttribute="trailing" constant="5" id="ySY-8B-kjE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-It-KUH">
+                                <rect key="frame" x="0.0" y="137" width="280" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2615 reviews" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-5U-s2v" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="65.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdp-Hx-3kN" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="22" width="70" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="lDn-j1-klI"/>
+                                            <constraint firstAttribute="width" constant="70" id="oiq-oT-NNW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="3"/>
+                                        <state key="normal" title="Votes" image="vote">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-S8-I7y" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="22" width="60" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="8Ny-IB-HOX"/>
+                                            <constraint firstAttribute="height" constant="20" id="cZZ-Ch-lMp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="3"/>
+                                        <state key="normal" title="23" image="comment">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rq-SI-tC1" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="210" y="22" width="60" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="bKk-K5-uE6"/>
+                                            <constraint firstAttribute="width" constant="60" id="rPq-el-dNx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Reply">
+                                            <color key="titleColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Hal-S8-I7y" firstAttribute="top" secondItem="fdp-Hx-3kN" secondAttribute="top" id="2aU-0M-fGF"/>
+                                    <constraint firstItem="Hal-S8-I7y" firstAttribute="leading" secondItem="fdp-Hx-3kN" secondAttribute="trailing" id="EXq-vB-nIJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Rq-SI-tC1" secondAttribute="trailing" constant="10" id="KLE-FO-sYj"/>
+                                    <constraint firstItem="OdY-5U-s2v" firstAttribute="top" secondItem="Qen-It-KUH" secondAttribute="top" id="VLh-IE-MQU"/>
+                                    <constraint firstItem="OdY-5U-s2v" firstAttribute="leading" secondItem="Qen-It-KUH" secondAttribute="leading" constant="10" id="h6o-Qa-FNK"/>
+                                    <constraint firstAttribute="bottom" secondItem="fdp-Hx-3kN" secondAttribute="bottom" constant="1" id="hXk-vw-cuO"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Rq-SI-tC1" secondAttribute="bottom" constant="1" id="ksq-g5-bem"/>
+                                    <constraint firstItem="Hal-S8-I7y" firstAttribute="bottom" secondItem="fdp-Hx-3kN" secondAttribute="bottom" id="prj-rF-uKp"/>
+                                    <constraint firstItem="fdp-Hx-3kN" firstAttribute="top" secondItem="OdY-5U-s2v" secondAttribute="bottom" constant="10" id="vnT-Aj-HV2"/>
+                                    <constraint firstItem="fdp-Hx-3kN" firstAttribute="leading" secondItem="Qen-It-KUH" secondAttribute="leading" constant="10" id="wHB-yX-uJg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J7J-og-5Iu" firstAttribute="top" secondItem="lpF-iI-zA9" secondAttribute="top" constant="18" id="1Qj-4U-Brt"/>
+                            <constraint firstItem="DyL-Bm-RrO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="J7J-og-5Iu" secondAttribute="trailing" constant="5" id="1nm-Oa-7Tp"/>
+                            <constraint firstItem="Qen-It-KUH" firstAttribute="top" secondItem="UtW-Ix-ga6" secondAttribute="bottom" constant="5" id="26M-l9-1uI"/>
+                            <constraint firstItem="Qen-It-KUH" firstAttribute="leading" secondItem="lpF-iI-zA9" secondAttribute="leading" id="76A-tN-q0K"/>
+                            <constraint firstItem="O7a-76-P7h" firstAttribute="leading" secondItem="lpF-iI-zA9" secondAttribute="leading" id="MbM-KS-cXO"/>
+                            <constraint firstItem="J7J-og-5Iu" firstAttribute="leading" secondItem="Z7H-A4-nPE" secondAttribute="trailing" constant="10" id="OWE-6e-iaz"/>
+                            <constraint firstItem="O7a-76-P7h" firstAttribute="top" secondItem="Z7H-A4-nPE" secondAttribute="bottom" constant="10" id="QrO-Ej-58J"/>
+                            <constraint firstAttribute="trailing" secondItem="DyL-Bm-RrO" secondAttribute="trailing" constant="10" id="Y0x-E9-HZf"/>
+                            <constraint firstItem="UtW-Ix-ga6" firstAttribute="top" secondItem="O7a-76-P7h" secondAttribute="bottom" id="YU6-9d-QsV"/>
+                            <constraint firstItem="qrz-6V-7BH" firstAttribute="leading" secondItem="Z7H-A4-nPE" secondAttribute="trailing" constant="10" id="e8y-0f-wZL"/>
+                            <constraint firstAttribute="trailing" secondItem="Qen-It-KUH" secondAttribute="trailing" id="en3-bg-JQf"/>
+                            <constraint firstAttribute="bottom" secondItem="Qen-It-KUH" secondAttribute="bottom" constant="10" id="f4g-8r-mKB"/>
+                            <constraint firstItem="qrz-6V-7BH" firstAttribute="top" secondItem="J7J-og-5Iu" secondAttribute="bottom" constant="5" id="k41-Qi-JMJ"/>
+                            <constraint firstItem="DyL-Bm-RrO" firstAttribute="top" secondItem="lpF-iI-zA9" secondAttribute="top" id="m73-DV-W89"/>
+                            <constraint firstAttribute="trailing" secondItem="O7a-76-P7h" secondAttribute="trailing" id="phb-Y0-oQY"/>
+                            <constraint firstItem="Z7H-A4-nPE" firstAttribute="top" secondItem="lpF-iI-zA9" secondAttribute="top" constant="10" id="ri8-iI-SrZ"/>
+                            <constraint firstAttribute="trailing" secondItem="UtW-Ix-ga6" secondAttribute="trailing" id="tEk-Rp-3Zq"/>
+                            <constraint firstItem="Z7H-A4-nPE" firstAttribute="leading" secondItem="lpF-iI-zA9" secondAttribute="leading" constant="10" id="xiT-qq-CxH"/>
+                            <constraint firstItem="UtW-Ix-ga6" firstAttribute="leading" secondItem="lpF-iI-zA9" secondAttribute="leading" id="yp9-WQ-a5b"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lpF-iI-zA9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4eK-Hk-fpD"/>
+                    <constraint firstItem="lpF-iI-zA9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JBd-Wz-47m"/>
+                    <constraint firstAttribute="trailing" secondItem="lpF-iI-zA9" secondAttribute="trailing" constant="20" id="KXA-uz-s5T"/>
+                    <constraint firstAttribute="bottom" secondItem="lpF-iI-zA9" secondAttribute="bottom" constant="10" id="auh-j7-O2I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookmarkBtn" destination="DyL-Bm-RrO" id="ObP-ud-rGF"/>
+                <outlet property="commentBtn" destination="Hal-S8-I7y" id="jVQ-oS-tKL"/>
+                <outlet property="descLbl" destination="pNN-qC-ulp" id="GBt-fm-8sJ"/>
+                <outlet property="durationLbl" destination="qrz-6V-7BH" id="RUF-Qf-all"/>
+                <outlet property="imgBtn1" destination="Gsv-SJ-4BF" id="RhB-38-5t5"/>
+                <outlet property="imgBtn2" destination="jPw-K9-vjG" id="ck6-4n-leg"/>
+                <outlet property="imgBtn3" destination="V7w-BX-46j" id="aqk-jb-dNs"/>
+                <outlet property="imgBtn4" destination="PoN-lX-hrB" id="ggk-RV-xf9"/>
+                <outlet property="imgBtn5" destination="2up-b4-xiA" id="igo-hr-UdO"/>
+                <outlet property="imgBtn6" destination="jaV-ZA-JFV" id="rEA-T7-2UK"/>
+                <outlet property="imgView" destination="WFu-oX-gEu" id="mLs-sa-waZ"/>
+                <outlet property="nameLbl" destination="J7J-og-5Iu" id="j67-NE-eFi"/>
+                <outlet property="profilePicImg" destination="Z7H-A4-nPE" id="Y40-OQ-1aP"/>
+                <outlet property="replyBtn" destination="1Rq-SI-tC1" id="ac8-hG-bmQ"/>
+                <outlet property="reviewLbl" destination="OdY-5U-s2v" id="Zbr-hA-9jS"/>
+                <outlet property="voteBtn" destination="fdp-Hx-3kN" id="s1O-kr-4dR"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark_off" width="22" height="32"/>
+        <image name="bookmark_on" width="22" height="32"/>
+        <image name="comment" width="14.5" height="14.5"/>
+        <image name="temp_bruj" width="703" height="483"/>
+        <image name="vote" width="19.5" height="19.5"/>
+    </resources>
+</document>

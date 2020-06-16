@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomSideMenuTVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4co-vu-Oke">
+                        <rect key="frame" x="20" y="14" width="15" height="22"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFv-lx-VBH">
+                                <rect key="frame" x="0.0" y="0.0" width="15" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="SZY-Ib-90I"/>
+                                </constraints>
+                                <state key="normal" image="next"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan your trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3O-Ke-28p" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="35" y="16" width="100.5" height="18"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-dk-GAw">
+                        <rect key="frame" x="145.5" y="14" width="5" height="22"/>
+                        <state key="normal" image="next"/>
+                        <state key="selected" image="dropdown"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-Z7-pfT">
+                        <rect key="frame" x="0.0" y="5" width="320" height="40"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GjL-Z7-pfT" secondAttribute="trailing" id="2OV-8l-bwX"/>
+                    <constraint firstItem="BaG-dk-GAw" firstAttribute="centerY" secondItem="h3O-Ke-28p" secondAttribute="centerY" id="49F-5O-tvc"/>
+                    <constraint firstItem="h3O-Ke-28p" firstAttribute="leading" secondItem="4co-vu-Oke" secondAttribute="trailing" id="8w3-JM-9cT"/>
+                    <constraint firstItem="h3O-Ke-28p" firstAttribute="centerY" secondItem="4co-vu-Oke" secondAttribute="centerY" id="KLF-U6-0tY"/>
+                    <constraint firstItem="h3O-Ke-28p" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MBl-sl-lug"/>
+                    <constraint firstItem="GjL-Z7-pfT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MPJ-fx-fNp"/>
+                    <constraint firstItem="4co-vu-Oke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="S9P-Dp-QdI"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h3O-Ke-28p" secondAttribute="trailing" constant="20" id="SH6-gL-KL1"/>
+                    <constraint firstItem="BaG-dk-GAw" firstAttribute="leading" secondItem="h3O-Ke-28p" secondAttribute="trailing" constant="10" id="dvL-hk-MPy"/>
+                    <constraint firstAttribute="bottom" secondItem="GjL-Z7-pfT" secondAttribute="bottom" constant="5" id="kVP-aQ-UpT"/>
+                    <constraint firstItem="GjL-Z7-pfT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="lZP-E5-qht"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="downArrowBtn" destination="BaG-dk-GAw" id="4Ds-ej-Lkg"/>
+                <outlet property="menuBtn" destination="GjL-Z7-pfT" id="Ohf-FM-4P2"/>
+                <outlet property="nextArrowBtn" destination="PFv-lx-VBH" id="xuE-vo-YoV"/>
+                <outlet property="titleLbl" destination="h3O-Ke-28p" id="6Cf-aj-zLd"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropdown" width="9" height="5"/>
+        <image name="next" width="5" height="9"/>
+    </resources>
+</document>

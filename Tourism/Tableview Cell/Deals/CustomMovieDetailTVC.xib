@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Bold.ttf">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomMovieDetailTVC" id="KGk-i7-Jjw" customClass="CustomMovieDetailTVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-Mw-Rjj">
+                        <rect key="frame" x="20" y="0.0" width="280" height="55"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XT1-pr-vVi" customClass="ImageView" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="5hm-xr-Ea0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oJV-Gk-ASM" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="11" width="60" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="nbH-4d-wu9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-8n-0kQ" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="65" y="11" width="185" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="q6H-QZ-y6B"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Johnny English Reborn"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tintColorType">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 20.76" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S3U-ZK-1CQ" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="65" y="30" width="185" height="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cae-l7-wQ0">
+                                <rect key="frame" x="250" y="1" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dt0-DA-q2H"/>
+                                    <constraint firstAttribute="width" constant="30" id="Wrj-ps-2iu"/>
+                                </constraints>
+                                <state key="normal" image="ic_close"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZL0-kt-hoQ" customClass="ImageView" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="54" width="280" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ChV-tZ-r8x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZL0-kt-hoQ" firstAttribute="top" secondItem="S3U-ZK-1CQ" secondAttribute="bottom" constant="10" id="9uH-s8-59L"/>
+                            <constraint firstItem="S3U-ZK-1CQ" firstAttribute="trailing" secondItem="oGz-8n-0kQ" secondAttribute="trailing" id="Izs-22-dNS"/>
+                            <constraint firstAttribute="trailing" secondItem="ZL0-kt-hoQ" secondAttribute="trailing" id="MvJ-XI-h9X"/>
+                            <constraint firstItem="S3U-ZK-1CQ" firstAttribute="top" secondItem="oGz-8n-0kQ" secondAttribute="bottom" constant="5" id="Pcs-xb-6d9"/>
+                            <constraint firstAttribute="trailing" secondItem="cae-l7-wQ0" secondAttribute="trailing" id="QG0-SU-D3b"/>
+                            <constraint firstItem="ZL0-kt-hoQ" firstAttribute="leading" secondItem="rkB-Mw-Rjj" secondAttribute="leading" id="QmF-vo-8Pb"/>
+                            <constraint firstItem="oJV-Gk-ASM" firstAttribute="leading" secondItem="rkB-Mw-Rjj" secondAttribute="leading" id="RZu-gy-D0t"/>
+                            <constraint firstItem="oGz-8n-0kQ" firstAttribute="top" secondItem="XT1-pr-vVi" secondAttribute="bottom" constant="10" id="VT8-cx-kOs"/>
+                            <constraint firstItem="XT1-pr-vVi" firstAttribute="top" secondItem="rkB-Mw-Rjj" secondAttribute="top" id="e04-iy-zDT"/>
+                            <constraint firstItem="cae-l7-wQ0" firstAttribute="top" secondItem="XT1-pr-vVi" secondAttribute="bottom" id="efN-b3-Dq6"/>
+                            <constraint firstItem="oJV-Gk-ASM" firstAttribute="top" secondItem="XT1-pr-vVi" secondAttribute="bottom" constant="10" id="fYl-Zi-52m"/>
+                            <constraint firstAttribute="trailing" secondItem="XT1-pr-vVi" secondAttribute="trailing" id="l9S-xc-Adh"/>
+                            <constraint firstItem="XT1-pr-vVi" firstAttribute="leading" secondItem="rkB-Mw-Rjj" secondAttribute="leading" id="ogX-iF-LGQ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZL0-kt-hoQ" secondAttribute="bottom" id="qVl-4H-rbV"/>
+                            <constraint firstItem="S3U-ZK-1CQ" firstAttribute="leading" secondItem="oGz-8n-0kQ" secondAttribute="leading" id="rMb-aN-sAt"/>
+                            <constraint firstItem="cae-l7-wQ0" firstAttribute="leading" secondItem="oGz-8n-0kQ" secondAttribute="trailing" id="viK-We-9i9"/>
+                            <constraint firstItem="oGz-8n-0kQ" firstAttribute="leading" secondItem="oJV-Gk-ASM" secondAttribute="trailing" constant="5" id="zLx-2m-hS3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rkB-Mw-Rjj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="5Oy-LZ-LEO"/>
+                    <constraint firstAttribute="trailing" secondItem="rkB-Mw-Rjj" secondAttribute="trailing" constant="20" id="AOy-Ah-b1t"/>
+                    <constraint firstItem="rkB-Mw-Rjj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fcj-a7-Gml"/>
+                    <constraint firstAttribute="bottom" secondItem="rkB-Mw-Rjj" secondAttribute="bottom" id="lhJ-bM-UgY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryLbl" destination="oJV-Gk-ASM" id="1rG-BB-c0s"/>
+                <outlet property="closeBtn" destination="cae-l7-wQ0" id="1DE-SA-wks"/>
+                <outlet property="namebtn" destination="oGz-8n-0kQ" id="R6l-bn-mS0"/>
+                <outlet property="subTitleLbl" destination="S3U-ZK-1CQ" id="bAA-54-aaj"/>
+                <outlet property="topseperatorImg" destination="XT1-pr-vVi" id="bcz-eK-O1R"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_close" width="7" height="7"/>
+    </resources>
+</document>

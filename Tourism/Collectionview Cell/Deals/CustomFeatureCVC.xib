@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomFeatureCVC" id="gTV-IL-0wX" customClass="CustomFeatureCVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bo9-lb-BbD" customClass="View" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="2.5" y="0.0" width="55" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restourant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Jw-4Z-Owh" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="1" y="48" width="53" height="10"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJS-g0-w1F">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="48"/>
+                                <state key="normal" image="ic_wifi"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EJS-g0-w1F" secondAttribute="trailing" id="4qs-hE-lZN"/>
+                            <constraint firstItem="EJS-g0-w1F" firstAttribute="top" secondItem="bo9-lb-BbD" secondAttribute="top" id="8fd-Bh-8Xg"/>
+                            <constraint firstAttribute="bottom" secondItem="8Jw-4Z-Owh" secondAttribute="bottom" constant="2" id="bVX-MB-9cs"/>
+                            <constraint firstAttribute="trailing" secondItem="8Jw-4Z-Owh" secondAttribute="trailing" constant="1" id="m2I-73-0PN"/>
+                            <constraint firstItem="EJS-g0-w1F" firstAttribute="leading" secondItem="bo9-lb-BbD" secondAttribute="leading" id="m4x-Mg-7WF"/>
+                            <constraint firstItem="8Jw-4Z-Owh" firstAttribute="leading" secondItem="bo9-lb-BbD" secondAttribute="leading" constant="1" id="rPV-lO-Pz0"/>
+                            <constraint firstItem="8Jw-4Z-Owh" firstAttribute="top" secondItem="EJS-g0-w1F" secondAttribute="bottom" id="v1i-Be-4KQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderColorTypeAdapter">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bo9-lb-BbD" secondAttribute="bottom" id="OUr-5l-pER"/>
+                <constraint firstItem="bo9-lb-BbD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PGo-u0-O01"/>
+                <constraint firstAttribute="trailing" secondItem="bo9-lb-BbD" secondAttribute="trailing" constant="2.5" id="RbH-5n-SKI"/>
+                <constraint firstItem="bo9-lb-BbD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2.5" id="rXX-UU-WhY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgBtn" destination="EJS-g0-w1F" id="SWW-uw-Sni"/>
+                <outlet property="outerView" destination="bo9-lb-BbD" id="hHB-bq-YJm"/>
+                <outlet property="titleLbl" destination="8Jw-4Z-Owh" id="Apu-1s-KhT"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_wifi" width="18.5" height="14"/>
+    </resources>
+</document>

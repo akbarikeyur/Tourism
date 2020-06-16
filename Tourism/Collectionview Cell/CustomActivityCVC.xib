@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Light.otf">
+            <string>MyriadPro-Light</string>
+        </array>
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomActivityCVC" id="gTV-IL-0wX" customClass="CustomActivityCVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL0-FQ-H6l" customClass="View" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="70" height="70"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDt-ha-8hD" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="10" maxX="7" maxY="0.0"/>
+                                <state key="normal" image="ic_select"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-k3-ede">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="ic_sport"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EGi-rB-4Fl" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="2" y="50" width="66" height="15"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EGi-rB-4Fl" secondAttribute="trailing" constant="2" id="28C-jm-2ze"/>
+                            <constraint firstAttribute="bottom" secondItem="EGi-rB-4Fl" secondAttribute="bottom" constant="5" id="678-Vs-DrT"/>
+                            <constraint firstAttribute="trailing" secondItem="cDt-ha-8hD" secondAttribute="trailing" id="Fj8-SX-d5J"/>
+                            <constraint firstAttribute="bottom" secondItem="jSP-k3-ede" secondAttribute="bottom" id="MGy-JO-FBZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jSP-k3-ede" secondAttribute="trailing" id="eCs-rt-gru"/>
+                            <constraint firstAttribute="height" constant="70" id="mt0-jy-Uad"/>
+                            <constraint firstItem="EGi-rB-4Fl" firstAttribute="leading" secondItem="kL0-FQ-H6l" secondAttribute="leading" constant="2" id="nDS-Pj-F2V"/>
+                            <constraint firstItem="jSP-k3-ede" firstAttribute="top" secondItem="kL0-FQ-H6l" secondAttribute="top" id="ok2-Li-ODV"/>
+                            <constraint firstItem="cDt-ha-8hD" firstAttribute="leading" secondItem="kL0-FQ-H6l" secondAttribute="leading" id="u5K-tU-Nk7"/>
+                            <constraint firstAttribute="bottom" secondItem="cDt-ha-8hD" secondAttribute="bottom" id="ueW-3v-FHR"/>
+                            <constraint firstItem="jSP-k3-ede" firstAttribute="leading" secondItem="kL0-FQ-H6l" secondAttribute="leading" id="yBg-ef-031"/>
+                            <constraint firstItem="cDt-ha-8hD" firstAttribute="top" secondItem="kL0-FQ-H6l" secondAttribute="top" id="zn6-k8-dRh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderColorTypeAdapter">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1015 Views" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oiw-ue-tq2" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="5" y="85" width="70" height="12"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="al"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kL0-FQ-H6l" secondAttribute="trailing" constant="5" id="5ww-w5-xHF"/>
+                <constraint firstItem="oiw-ue-tq2" firstAttribute="top" secondItem="kL0-FQ-H6l" secondAttribute="bottom" constant="10" id="EIc-2i-mch"/>
+                <constraint firstItem="oiw-ue-tq2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="INI-lF-HTr"/>
+                <constraint firstItem="kL0-FQ-H6l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="P0E-d4-vEv"/>
+                <constraint firstAttribute="trailing" secondItem="oiw-ue-tq2" secondAttribute="trailing" constant="5" id="WCd-3F-WUw"/>
+                <constraint firstItem="kL0-FQ-H6l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="nFw-PK-abH"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oiw-ue-tq2" secondAttribute="bottom" constant="8" id="qub-lV-zLT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgBtn" destination="jSP-k3-ede" id="P7b-r3-cW2"/>
+                <outlet property="selectBtn" destination="cDt-ha-8hD" id="hmf-2S-U8J"/>
+                <outlet property="titleLbl" destination="EGi-rB-4Fl" id="Whc-Kv-bl0"/>
+                <outlet property="viewLbl" destination="oiw-ue-tq2" id="Tpc-3i-nkr"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="154.72263868065968"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_select" width="8" height="6"/>
+        <image name="ic_sport" width="43" height="35"/>
+    </resources>
+</document>

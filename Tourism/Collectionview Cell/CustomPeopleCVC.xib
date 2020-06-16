@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Bold.ttf">
+            <string>MyriadPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomPeopleCVC" id="gTV-IL-0wX" customClass="CustomPeopleCVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-nC-8Zk" customClass="View" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ox-1I-L89" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="12"/>
+                                <state key="normal" backgroundImage="profile_user">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ox-1I-L89" firstAttribute="top" secondItem="cH4-nC-8Zk" secondAttribute="top" constant="5" id="Gj7-81-czX"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ox-1I-L89" secondAttribute="bottom" constant="5" id="YWy-LJ-8t4"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ox-1I-L89" secondAttribute="trailing" constant="5" id="cCw-ze-l2I"/>
+                            <constraint firstItem="3Ox-1I-L89" firstAttribute="leading" secondItem="cH4-nC-8Zk" secondAttribute="leading" constant="5" id="ylQ-wO-PhY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="cH4-nC-8Zk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="0pI-ei-S7G"/>
+                <constraint firstAttribute="bottom" secondItem="cH4-nC-8Zk" secondAttribute="bottom" constant="5" id="9Z3-Oi-9f2"/>
+                <constraint firstAttribute="trailing" secondItem="cH4-nC-8Zk" secondAttribute="trailing" constant="5" id="VHf-Ou-Xnz"/>
+                <constraint firstItem="cH4-nC-8Zk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="m04-fa-3Od"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="outerView" destination="cH4-nC-8Zk" id="6oh-HY-JeP"/>
+                <outlet property="profilePicBtn" destination="3Ox-1I-L89" id="pOF-MQ-57Q"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile_user" width="88" height="88"/>
+    </resources>
+</document>

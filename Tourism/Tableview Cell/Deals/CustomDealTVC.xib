@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomDealTVC" id="KGk-i7-Jjw" customClass="CustomDealTVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="mv6-OV-2mA" customClass="ImageView" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="90" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="xJg-cZ-4HX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheesy Beef Burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nJe-va-vPa" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="120" y="15" width="180" height="16"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Pcs Salmon, 2pcs california, 1 pcs alvacore, 2pcs tuna" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="apd-p3-jcV" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="120" y="55" width="180" height="24"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 20.76" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qmG-NN-tCP" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="120" y="36" width="180" height="14"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                        <color key="textColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nJe-va-vPa" secondAttribute="trailing" constant="20" id="1w4-a8-FfE"/>
+                    <constraint firstItem="mv6-OV-2mA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="DTi-06-ZDX"/>
+                    <constraint firstAttribute="trailing" secondItem="qmG-NN-tCP" secondAttribute="trailing" constant="20" id="E6x-lp-fFO"/>
+                    <constraint firstAttribute="bottom" secondItem="mv6-OV-2mA" secondAttribute="bottom" constant="10" id="MNK-l6-TCJ"/>
+                    <constraint firstItem="nJe-va-vPa" firstAttribute="leading" secondItem="mv6-OV-2mA" secondAttribute="trailing" constant="10" id="N7y-zW-CsH"/>
+                    <constraint firstAttribute="trailing" secondItem="apd-p3-jcV" secondAttribute="trailing" constant="20" id="Txd-TN-V5W"/>
+                    <constraint firstItem="mv6-OV-2mA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VIs-v9-3Ct"/>
+                    <constraint firstItem="apd-p3-jcV" firstAttribute="leading" secondItem="mv6-OV-2mA" secondAttribute="trailing" constant="10" id="X0l-II-cJe"/>
+                    <constraint firstItem="apd-p3-jcV" firstAttribute="top" secondItem="qmG-NN-tCP" secondAttribute="bottom" constant="5" id="Zb3-aA-axs"/>
+                    <constraint firstItem="qmG-NN-tCP" firstAttribute="leading" secondItem="mv6-OV-2mA" secondAttribute="trailing" constant="10" id="bte-64-pvU"/>
+                    <constraint firstItem="nJe-va-vPa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="eU9-6b-Muv"/>
+                    <constraint firstItem="qmG-NN-tCP" firstAttribute="top" secondItem="nJe-va-vPa" secondAttribute="bottom" constant="5" id="gLj-PG-PLz"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="apd-p3-jcV" secondAttribute="bottom" constant="10" id="xW2-ao-g1Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="mv6-OV-2mA" id="IDA-iD-NKC"/>
+                <outlet property="titleLbl" destination="nJe-va-vPa" id="yIp-xn-5k8"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="food" width="200" height="218"/>
+    </resources>
+</document>

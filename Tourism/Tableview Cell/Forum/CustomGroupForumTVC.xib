@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Bold.ttf">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomGroupForumTVC" id="KGk-i7-Jjw" customClass="CustomGroupForumTVC" customModule="Tourism" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nrt-Wq-uPf" customClass="View" customModule="Tourism" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="280" height="180"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquaventure Waterpark" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyX-Bm-9Sa" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="220" height="16"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm going to advance water park tomorrow" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHx-s3-xFk" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="10" y="30" width="260" height="12"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fV-0e-gKI" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="230" y="10" width="40" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="45u-Os-OYm"/>
+                                    <constraint firstAttribute="height" constant="20" id="Ca3-bd-eca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Join +">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ab"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Hugedxd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcs-Di-Pp8" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="10" y="47" width="61.5" height="12"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.50588235290000005" green="0.31372549020000001" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar 16, 2009" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xv-U3-7uM" customClass="Label" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="81.5" y="47" width="64" height="12"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ar"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-bO-9g4">
+                                <rect key="frame" x="180" y="43" width="65" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfV-kP-Lh6" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.45882352939999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="k2R-tR-pDd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YL9-te-h72" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.79607843140000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="PYh-pT-Gw4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2e-YT-3cW" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.16862745100000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="45Z-tu-T59"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcH-ST-1wx" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.30588235289999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="nK3-pJ-WKT"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dfV-kP-Lh6" secondAttribute="bottom" id="1Us-Vc-y2R"/>
+                                    <constraint firstItem="xcH-ST-1wx" firstAttribute="top" secondItem="TMw-bO-9g4" secondAttribute="top" id="3Y5-MA-msu"/>
+                                    <constraint firstAttribute="bottom" secondItem="xcH-ST-1wx" secondAttribute="bottom" id="FR8-vJ-vv7"/>
+                                    <constraint firstItem="A2e-YT-3cW" firstAttribute="leading" secondItem="xcH-ST-1wx" secondAttribute="trailing" constant="-5" id="Frz-7U-Zwb"/>
+                                    <constraint firstItem="YL9-te-h72" firstAttribute="leading" secondItem="A2e-YT-3cW" secondAttribute="trailing" constant="-5" id="KZl-Qv-vXM"/>
+                                    <constraint firstAttribute="bottom" secondItem="YL9-te-h72" secondAttribute="bottom" id="UoT-o6-wVV"/>
+                                    <constraint firstItem="dfV-kP-Lh6" firstAttribute="leading" secondItem="YL9-te-h72" secondAttribute="trailing" constant="-5" id="a7q-nt-Iig"/>
+                                    <constraint firstItem="dfV-kP-Lh6" firstAttribute="top" secondItem="TMw-bO-9g4" secondAttribute="top" id="aAP-dw-S3T"/>
+                                    <constraint firstItem="YL9-te-h72" firstAttribute="top" secondItem="TMw-bO-9g4" secondAttribute="top" id="bpo-SG-R0B"/>
+                                    <constraint firstAttribute="height" constant="20" id="cq4-fd-v8S"/>
+                                    <constraint firstAttribute="bottom" secondItem="A2e-YT-3cW" secondAttribute="bottom" id="iwP-G5-zoY"/>
+                                    <constraint firstItem="A2e-YT-3cW" firstAttribute="top" secondItem="TMw-bO-9g4" secondAttribute="top" id="lOU-qP-XId"/>
+                                    <constraint firstItem="xcH-ST-1wx" firstAttribute="leading" secondItem="TMw-bO-9g4" secondAttribute="leading" id="mOm-2f-2wO"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfV-kP-Lh6" secondAttribute="trailing" id="wvl-cc-96Y"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sD-s8-FAD" customClass="Button" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="250" y="43" width="20" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="lgL-3p-yJ6"/>
+                                    <constraint firstAttribute="height" constant="20" id="tc3-DI-V3J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="61">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="ab"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_bruj" translatesAutoresizingMaskIntoConstraints="NO" id="fnm-HO-EaH" customClass="ImageView" customModule="Tourism" customModuleProvider="target">
+                                <rect key="frame" x="10" y="69" width="260" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="9h7-bs-6gW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bcs-Di-Pp8" firstAttribute="top" secondItem="DHx-s3-xFk" secondAttribute="bottom" constant="5" id="0Rb-gq-PTw"/>
+                            <constraint firstAttribute="bottom" secondItem="fnm-HO-EaH" secondAttribute="bottom" constant="10" id="1tX-Fq-Wv2"/>
+                            <constraint firstItem="6xv-U3-7uM" firstAttribute="leading" secondItem="Bcs-Di-Pp8" secondAttribute="trailing" constant="10" id="2KX-qW-ePT"/>
+                            <constraint firstItem="TMw-bO-9g4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6xv-U3-7uM" secondAttribute="trailing" constant="10" id="2Z9-RK-QTr"/>
+                            <constraint firstItem="6sD-s8-FAD" firstAttribute="leading" secondItem="TMw-bO-9g4" secondAttribute="trailing" constant="5" id="5nI-bN-jCg"/>
+                            <constraint firstItem="OyX-Bm-9Sa" firstAttribute="leading" secondItem="Nrt-Wq-uPf" secondAttribute="leading" constant="10" id="FXL-cd-QLM"/>
+                            <constraint firstItem="6sD-s8-FAD" firstAttribute="centerY" secondItem="TMw-bO-9g4" secondAttribute="centerY" id="Gzi-pz-opt"/>
+                            <constraint firstItem="6xv-U3-7uM" firstAttribute="top" secondItem="Bcs-Di-Pp8" secondAttribute="top" id="L3N-fu-KgP"/>
+                            <constraint firstAttribute="trailing" secondItem="6sD-s8-FAD" secondAttribute="trailing" constant="10" id="LQg-M7-LrU"/>
+                            <constraint firstItem="2fV-0e-gKI" firstAttribute="leading" secondItem="OyX-Bm-9Sa" secondAttribute="trailing" id="NOh-ys-ZR5"/>
+                            <constraint firstItem="Bcs-Di-Pp8" firstAttribute="leading" secondItem="Nrt-Wq-uPf" secondAttribute="leading" constant="10" id="QlD-LE-wLU"/>
+                            <constraint firstAttribute="trailing" secondItem="DHx-s3-xFk" secondAttribute="trailing" constant="10" id="RDw-22-Aei"/>
+                            <constraint firstItem="2fV-0e-gKI" firstAttribute="top" secondItem="Nrt-Wq-uPf" secondAttribute="top" constant="10" id="UaA-5f-cFL"/>
+                            <constraint firstItem="DHx-s3-xFk" firstAttribute="leading" secondItem="Nrt-Wq-uPf" secondAttribute="leading" constant="10" id="W1I-fx-vwH"/>
+                            <constraint firstItem="fnm-HO-EaH" firstAttribute="leading" secondItem="Nrt-Wq-uPf" secondAttribute="leading" constant="10" id="auV-kh-JoE"/>
+                            <constraint firstItem="DHx-s3-xFk" firstAttribute="top" secondItem="2fV-0e-gKI" secondAttribute="bottom" id="b71-pj-epp"/>
+                            <constraint firstItem="6sD-s8-FAD" firstAttribute="centerY" secondItem="Bcs-Di-Pp8" secondAttribute="centerY" id="bhX-gY-pAV"/>
+                            <constraint firstItem="fnm-HO-EaH" firstAttribute="top" secondItem="Bcs-Di-Pp8" secondAttribute="bottom" constant="10" id="gSM-4H-otO"/>
+                            <constraint firstAttribute="trailing" secondItem="2fV-0e-gKI" secondAttribute="trailing" constant="10" id="gVf-qz-azo"/>
+                            <constraint firstItem="OyX-Bm-9Sa" firstAttribute="top" secondItem="Nrt-Wq-uPf" secondAttribute="top" constant="10" id="heo-VT-e4p"/>
+                            <constraint firstAttribute="trailing" secondItem="fnm-HO-EaH" secondAttribute="trailing" constant="10" id="uyl-qU-8vs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nrt-Wq-uPf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1EP-Ft-0UY"/>
+                    <constraint firstAttribute="bottom" secondItem="Nrt-Wq-uPf" secondAttribute="bottom" constant="10" id="Bac-55-D0A"/>
+                    <constraint firstItem="Nrt-Wq-uPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="DNW-Zv-X8k"/>
+                    <constraint firstAttribute="trailing" secondItem="Nrt-Wq-uPf" secondAttribute="trailing" constant="20" id="Qtz-vW-xS8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ByLbl" destination="Bcs-Di-Pp8" id="q1S-tV-Fdl"/>
+                <outlet property="dateLbl" destination="6xv-U3-7uM" id="SDh-ox-Qca"/>
+                <outlet property="descLbl" destination="DHx-s3-xFk" id="8l4-YB-1Nd"/>
+                <outlet property="imgBtn1" destination="dfV-kP-Lh6" id="bOt-g3-hZu"/>
+                <outlet property="imgBtn2" destination="YL9-te-h72" id="Iws-Ll-MdS"/>
+                <outlet property="imgBtn3" destination="A2e-YT-3cW" id="fq0-R5-2Rp"/>
+                <outlet property="imgBtn4" destination="xcH-ST-1wx" id="Swl-CD-tsR"/>
+                <outlet property="imgView" destination="fnm-HO-EaH" id="QnN-S0-IUY"/>
+                <outlet property="joinBtn" destination="2fV-0e-gKI" id="eeP-kO-vN2"/>
+                <outlet property="titleLbl" destination="OyX-Bm-9Sa" id="La6-lT-GBe"/>
+                <outlet property="totalBtn" destination="6sD-s8-FAD" id="PIp-aV-ePg"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="temp_bruj" width="703" height="483"/>
+    </resources>
+</document>
